@@ -52,11 +52,15 @@
       <div class="jumbotron">
         <h1 class="display-4">Thanks for being part of Back4Good!</h1>
         <p class="lead">Every week we challenge you guys to participate in our weekly challenge to do some Good!<br/z>
-        This weeks challenge is {{challenge}}.
+        This weeks challenge is {{challenge}} at your {{location}}.
         </p>
         <hr class="my-4">
         <p>Make sure to tag us on social media for your chance to win Person of the Week</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+        <form action="/" method="POST">
+          <!-- <input id="input-form" type="text" name="firstname" placeholder="Enter player name"> -->
+          <button id="submit-btn"><input type="submit" value="Submit"></button>
+        </form>
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
