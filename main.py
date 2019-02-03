@@ -26,4 +26,4 @@ def my_form_post():
     record = cur.fetchone()
     challenge = record[0]
 
-    return render_template('index.html')
+    return render_template('index.html', challenge = challenge)
