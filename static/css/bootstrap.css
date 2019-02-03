@@ -8,7 +8,7 @@
    position: relative;
  }
  body #main_nav{
-   background-color: white;
+   background-color: #fff;
    height: 74px;
    width: 100%;
    display: flex;
@@ -9957,18 +9957,6 @@ footer section i{
   font-size: 2.2rem;
 }
 
-=======
-}
-
-.footer-list-top {
-  width: 33.333%;
-}
-
-.footer-list-top > li {
-  text-align: center;
-  padding-bottom: 10px;
-}
-
 .footer-social-section {
   width: 100%;
   align-items: center;
@@ -9977,60 +9965,4 @@ footer section i{
   margin-top: 5px;
 }
 
-.footer-social-section::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 10px;
-  border-top: 1px solid #ccc;
-  width: calc(100% - 20px);
-}
 
-.footer-social-overlap {
-  position: relative;
-  z-index: 2;
-  background: #373737;
-  padding: 0 20px;
-}
-
-.footer-social-connect {
-  display: flex;
-  align-items: center;
-  font: 3.5em "Oswald", sans-serif;
-  color: #fff;
-}
-
-.footer-social-small {
-  font-size: 0.6em;
-  padding: 0px 20px;
-}
-
-.footer-social-overlap > a {
-  font-size: 3em;
-}
-
-.footer-social-overlap > a:not(:first-child) {
-  margin-left: 0.38em;
-}
-
-.footer-bottom-section {
-  width: 100%;
-  padding: 10px;
-  border-top: 1px solid #ccc;
-  margin-top: 10px;
-}
-
-.footer-bottom-section > div:first-child {
-  margin-right: auto;
-}
-
-.footer-bottom-wrapper {
-  font-size: 1.5em;
-  color: #fff;
-}
-
-.footer-address {
-  display: inline;
-  font-style: normal;
-}
