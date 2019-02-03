@@ -4,6 +4,53 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ body .header-parent{
+   position: relative;
+ }
+ body #main_nav{
+   background-color: white;
+   height: 74px;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   position: fixed;
+   z-index: 100;
+ }
+ body #main_nav #header-title{
+   color: black;
+   font-family: 'Fredericka the Great', cursive;
+   font-size: 4.5rem;
+
+ }
+ body #carouselExampleIndicators{
+  padding-top: 75px;
+
+ }
+
+ .jumbotron .section-container input {
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 2.0rem;
+  padding: 0.15rem 1.2rem;
+  display: block;
+  background-color: #62e451;
+  border: 1px solid transparent;
+  color: #ffffff;
+  font-weight: 300;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.jumbotron .section-container input:hover {
+  background-color: #ffffff;
+  color: #62e451;
+  border-color: #62e451;
+}
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -313,7 +360,7 @@ progress {
 
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
-  height: auto;
+  height: auto; 
 }
 
 [type="search"] {
@@ -5087,9 +5134,16 @@ a.badge-dark:hover, a.badge-dark:focus {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
+  background-color: white;
   border-radius: 0.3rem;
 }
+.jumbotron .section-container{
+  text-align: center;
+}
+.jumbotron .section-container .display-4{
+  padding-bottom: 25px;
+}
+
 
 @media (min-width: 576px) {
   .jumbotron {
@@ -9883,5 +9937,196 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+  
 }
 /*# sourceMappingURL=bootstrap.css.map */
+footer {
+  background: #373737;
+  margin-top: auto;
+  width: 100%;
+}
+
+.footer-list-top {
+  width: 33.333%;
+}
+
+.footer-list-top > li {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.footer-social-section {
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 5px;
+}
+
+.footer-social-section::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 10px;
+  border-top: 1px solid #ccc;
+  width: calc(100% - 20px);
+}
+
+.footer-social-overlap {
+  position: relative;
+  z-index: 2;
+  background: #373737;
+  padding: 0 20px;
+}
+
+.footer-social-connect {
+  display: flex;
+  align-items: center;
+  font: 3.5em "Oswald", sans-serif;
+  color: #fff;
+}
+
+.footer-social-small {
+  font-size: 0.6em;
+  padding: 0px 20px;
+}
+
+.footer-social-overlap > a {
+  font-size: 3em;
+}
+
+.footer-social-overlap > a:not(:first-child) {
+  margin-left: 0.38em;
+}
+
+.footer-bottom-section {
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.footer-bottom-section > div:first-child {
+  margin-right: auto;
+}
+
+.footer-bottom-wrapper {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.footer-address {
+  display: inline;
+  font-style: normal;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-list-header {
+    font-size: 2em;
+  }
+
+  .footer-list-anchor {
+    font-size: 1.1em;
+  }
+
+  .footer-social-connect {
+    font-size: 2.5em;
+  }
+
+  .footer-social-overlap > a {
+    font-size: 2.24em;
+  }
+
+  .footer-bottom-wrapper {
+    font-size: 1.3em;
+  }
+}
+@media only screen and (max-width: 568px) {
+  main {
+    font-size: 5em;
+  }
+
+  .footer-list-top {
+    width: 100%;
+  }
+
+  .footer-list-header {
+    font-size: 3em;
+  }
+
+  .footer-list-anchor {
+    font-size: 1.5em;
+  }
+
+  .footer-social-section {
+    justify-content: center;
+  }
+
+  .footer-social-section::after {
+    top: 25%;
+  }
+
+  .footer-social-connect {
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+
+  .footer-social-overlap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-social-icons-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .footer-social-overlap > a:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  .footer-bottom-section {
+    padding: 0 5px 10px 5px;
+  }
+
+  .footer-bottom-wrapper {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .footer-social-overlap > a {
+    margin: auto;
+  }
+
+  .footer-social-overlap > a:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .footer-bottom-rights {
+    display: block;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .footer-list-header {
+    font-size: 2.2em;
+  }
+
+  .footer-list-anchor {
+    font-size: 1.2em;
+  }
+
+  .footer-social-connect {
+    font-size: 2.4em;
+  }
+
+  .footer-social-overlap > a {
+    font-size: 2.24em;
+  }
+
+  .footer-bottom-wrapper {
+    font-size: 1.3em;
+  }
+}
