@@ -1,7 +1,11 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import random, sqlite3
 
 app = Flask(__name__)
+
+#@app.route('/')
+def my_form_1():
+    return render_template('index.html')
 
 @app.route('/')
 def my_form_post():
@@ -25,5 +29,6 @@ def my_form_post():
     cur.execute('SELECT challenge FROM Challenges WHERE id=?', (rnd_index,))
     record = cur.fetchone()
     challenge = record[0]
-
+    print(challenge)
     return render_template('index.html', challenge = challenge)
+    #return render_template('index.html')
