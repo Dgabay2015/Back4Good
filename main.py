@@ -14,8 +14,8 @@ def my_form_post():
     cur.execute('SELECT id from Challenges')
 
     try:
-    for record in cur:
-        record_ids.append(record[0])
+        for record in cur:
+            record_ids.append(record[0])
 
     except:
         print("Unable to read challenges from data.sqlite")
