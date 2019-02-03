@@ -1,14 +1,10 @@
-from flask import Flask
+from flask import Flask, render_template
 import random, sqlite3
 
 app = Flask(__name__)
 
 @app.route('/')
-
-
-@app.route('/', methods=['POST'])
 def my_form_post():
-
 
     conn = sqlite3.connect('data.sqlite')
     cur = conn.cursor()
@@ -29,4 +25,5 @@ def my_form_post():
     cur.execute('SELECT challenge FROM Challenges WHERE id=?', (rnd_index,))
     record = cur.fetchone()
     challenge = record[0]
-    
+
+    return render_template('index.html')
